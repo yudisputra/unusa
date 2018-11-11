@@ -46,13 +46,15 @@
                 
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form role="form" action="<?php echo site_url().'/Home/hasil';?>" method="post">
+            <?php echo form_open('home/hasil');?>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="text" class="form-control form-control-lg" placeholder="Masukkan NIM Anda..">
+                  <input type="text" class="form-control form-control-lg" id="username" name="nim" placeholder="Masukkan NIM Anda..">
+                  <!-- <input type="text" class="form-control form-control-lg" placeholder="Masukkan NIM Anda.." name="search"> -->
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-success">Cek!</button>
+                  <button type="submit" class="btn btn-block btn-lg btn-success" name="submit">Cek!</button>
+                  <?php echo form_close();?>
                 </div>
               </div>
             </form>

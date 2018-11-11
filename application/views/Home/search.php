@@ -93,12 +93,12 @@
                 <!-- Post Content -->
                 <p class="lead">Dibawah ini adalah hasil pengumuman dari Himpunan Mahasiswa :</p>
                 <p>Gunakan Search untuk melihat nama sesuai NIM dibawah ini :<p>
-                <form class="form-inline" role="form" action="<?php echo site_url().'/Home/hasil';?>" method="post">
+                <?php echo form_open('home/hasil');?>
     			<div class="form-group">
         		<input type="text" class="form-control" name="search" placeholder="Masukkan NIM Anda">
     			</div>
     			<button type="submit" class="btn btn-info" name="submit" >Search</button>
-				</form>
+				<?php echo form_close();?>
 				<br>
 				<p>Atau silahkan klik dibawah ini untuk mendownload sebuah data pengumuman</p>
 

@@ -6,10 +6,12 @@ class Searchmodel extends CI_Model
         parent::__construct();
     }
 
-    function search($keyword)
+    function search($nim)
     {
-        $this->db->like('nim',$keyword);
-        $query  =   $this->db->get('mahasiswa');
+        $this->db->select('*');
+        $this->db->from('mahasiswa');
+        $this->db->where('nim', $nim);
+        $query = $this->db->get();
         return $query->result();
     }
 }

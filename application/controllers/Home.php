@@ -20,9 +20,11 @@ class Home extends CI_Controller {
 
 	public function hasil()
 	{
+		$this->load->helper('url','form');
+	    $this->load->library('form_validation');
 		$this->load->model('searchmodel');
-		$keyword=$this->input->post('submit');
-        $data['mahasiswa']=$this->searchmodel->search($keyword);
+		$nim=$this->input->post('nim');
+        $data['mahasiswa']=$this->searchmodel->search($nim);
         $this->load->view('Home/hasil', $data);
 	}
 
