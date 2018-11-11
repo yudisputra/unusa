@@ -5,13 +5,18 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view("Home/home");
+		$this->load->view("Home/beranda");
 	}
 
 	public function search()
 	{
 		$this->load->view("Home/search");
 	}
+	// public function beranda()
+	// {
+	// 	$this->load->view("Home/beranda");
+	// }
+
 
 	public function hasil()
 	{

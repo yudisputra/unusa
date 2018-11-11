@@ -17,17 +17,20 @@
 		<![endif]-->
 	</head>
 	<body>
+        <div class="container">
+        <div class="jumbotron">
+                  <div class="container">
+                    <h1 class="text-center">Hasil Pengumuman!</h1>
 
-     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <br>
-            <br>
-          
-            <br>
-            <br>
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <!-- <p align="center"> <img src="<?php echo base_url()?>assets/img/contact.png" align="center" width='20%' height='20%'  alt=""> </p> -->
+                    <h3 class="text-center">1 biodata orang e yang di search</h3>
+                  </div>
+    
+                </div>    
+        </div>
+        
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
                 <br>
                 <br>
