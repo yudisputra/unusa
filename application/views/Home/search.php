@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -8,22 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>UNUSA HIMA</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url()?>/assets/theme/home/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>/assets/theme/blog/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="<?php echo base_url()?>/assets/theme/home/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="<?php echo base_url()?>/assets/theme/home/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="<?php echo base_url()?>/assets/theme/home/css/creative.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="<?php echo base_url()?>/assets/theme/blog/css/blog-post.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,60 +25,146 @@
     <![endif]-->
 
 </head>
-	<body id="page-top">
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">HIMA MANAJEMEN UNUSA</a>
+                <a class="navbar-brand" href="#">Hima Unusa</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Divisi</a>
+                        <a href="#">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
-		<form class="form-inline" role="form" action="<?php echo site_url().'/Home/hasil';?>" method="post">
-    	<div class="form-group">
-        <input type="text" class="form-control" name="search" placeholder="Masukkan NIM Anda">
-    	</div>
-    	<button type="submit" class="btn btn-info" name="submit" >Search</button>
-		</form>
 
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- 		<script src="Hello World"></script>
+    <!-- Page Content -->
+    <div class="container">
 
- 		 <script src="<?php echo base_url()?>/assets/theme/home/vendor/jquery/jquery.min.js"></script>
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Pengumuman</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by Admin
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on 11 November, 2018</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead">Dibawah ini adalah hasil pengumuman dari Himpunan Mahasiswa :</p>
+                <p>Gunakan Search untuk melihat nama sesuai NIM dibawah ini :<p>
+                <form class="form-inline" role="form" action="<?php echo site_url().'/Home/hasil';?>" method="post">
+    			<div class="form-group">
+        		<input type="text" class="form-control" name="search" placeholder="Masukkan NIM Anda">
+    			</div>
+    			<button type="submit" class="btn btn-info" name="submit" >Search</button>
+				</form>
+				<br>
+				<p>Atau silahkan klik dibawah ini untuk mendownload sebuah data pengumuman</p>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Kategori Divisi</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Divisi Kewirausahaan</a>
+                                </li>
+                                <li><a href="#">Divisi Seni dan Olahraga</a>
+                                </li>
+                                <li><a href="#">Divisi Kerohanian</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                 <li><a href="#">Divisi PSDM</a>
+                                </li>
+                                 <li><a href="#">Divisi Pendidikan</a>
+                                </li>
+                                 <li><a href="#">Divisi Humas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="<?php echo base_url()?>/assets/theme/blog/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo base_url()?>/assets/theme/home/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url()?>/assets/theme/blog/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="<?php echo base_url()?>/assets/theme/home/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="<?php echo base_url()?>/assets/theme/home/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+</body>
 
-    <!-- Theme JavaScript -->
-    <script src="<?php echo base_url()?>/assets/theme/home/js/creative.min.js"></script>
-	</body>
 </html>
